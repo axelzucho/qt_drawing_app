@@ -103,10 +103,12 @@ void Polygon::on_pushButton_4_clicked()
 
 void Polygon::on_pushButton_5_clicked()
 {
+    QString tex = ui->Reflection_Type->currentText();
+
     DrawingPolygon drawingpolygon;
     drawingpolygon.points_number = ui->points->rowCount();
     float pos = ui->Reflection->text().toFloat();
-    if(ui->Reflection_Type->itemData(ui->Reflection_Type->currentIndex()) == 'Vertical'){
+    if(tex == "Vertical"){
         for(int i = 0; i < ui->points->rowCount(); ++i) {
             drawingpolygon.points_to_draw[2*i].setX(pos + (pos - ui->points->item(i,0)->text().toFloat()));
             drawingpolygon.points_to_draw[2*i].setY(ui->points->item(i,1)->text().toFloat());
@@ -114,7 +116,7 @@ void Polygon::on_pushButton_5_clicked()
             drawingpolygon.points_to_draw[2*i+1].setY(ui->points->item(i,3)->text().toFloat());
         }
     }
-    else if(ui->Reflection_Type->itemData(ui->Reflection_Type->currentIndex()) == "Horizontal"){
+    else if(tex == "Horizontal"){
         for(int i = 0; i < ui->points->rowCount(); ++i) {
             drawingpolygon.points_to_draw[2*i].setX(ui->points->item(i,0)->text().toFloat());
             drawingpolygon.points_to_draw[2*i].setY(2*pos - ui->points->item(i,1)->text().toFloat());

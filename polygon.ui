@@ -331,11 +331,6 @@
      <string>Vertical</string>
     </property>
    </item>
-   <item>
-    <property name="text">
-     <string>Diagonal</string>
-    </property>
-   </item>
   </widget>
   <widget class="QLabel" name="label_9">
    <property name="geometry">
