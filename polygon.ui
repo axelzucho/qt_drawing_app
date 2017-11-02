@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Polygon</class>
+ <widget class="QDialog" name="Polygon">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>20</y>
+     <width>48</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Polygon with (sides)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>410</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Draw Normal</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="points">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>481</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Y</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>X2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Y2</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>60</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X-Translation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>90</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y-Translation</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="X_Translation">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>60</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>500.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Y_Translation">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>90</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>500.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>130</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Draw Translated</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>180</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rotating angle (degrees)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Rotating_Angle">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>180</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>360.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>210</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X-Rotating Point</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>240</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y-Rotating Point</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="X_Rotating_Point">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>210</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>360.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Y_Rotating_Point">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>240</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>360.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>280</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Draw Rotated</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X-Scale Factor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>320</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y-Scale Factor</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="X_Scale_Factor">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>360.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Y_Scale_Factor">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>320</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>360.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>360</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Draw Scaled</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Reflection_Type">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>290</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Horizontal</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vertical</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Diagonal</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>290</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reflection</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>330</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Position</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Reflection">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>330</y>
+     <width>69</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>500.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>370</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Draw Reflected</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
