@@ -28,16 +28,28 @@ SOURCES += \
         mainwindow.cpp \
     polygon.cpp \
     arco.cpp \
-    drawingpolygon.cpp
+    drawingpolygon.cpp \
+    three_d.cpp \
+    cube.cpp \
+    rectangularprism.cpp \
+    triangular_prism.cpp
 
 HEADERS += \
         mainwindow.h \
     polygon.h \
     arco.h \
-    drawingpolygon.h
+    drawingpolygon.h \
+    three_d.h \
+    cube.h \
+    rectangularprism.h \
+    triangular_prism.h
 
 FORMS += \
         mainwindow.ui \
     polygon.ui \
     arco.ui \
-    drawingpolygon.ui
+    drawingpolygon.ui \
+    three_d.ui \
+    cube.ui \
+    rectangularprism.ui \
+    triangular_prism.ui

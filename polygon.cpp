@@ -32,8 +32,6 @@ void Polygon::on_pushButton_clicked()
     DrawingPolygon drawingpolygon;
     drawingpolygon.points_number = ui->points->rowCount();
     for(int i = 0; i < ui->points->rowCount(); ++i) {
-        //array[i][0] = ui->points->item(i,0)->text().toInt();
-        //array[i][1] = (int)ui->points->item(i,1)->text().toInt();
         drawingpolygon.points_to_draw[2*i].setX(ui->points->item(i,0)->text().toFloat());
         drawingpolygon.points_to_draw[2*i].setY(ui->points->item(i,1)->text().toFloat());
         drawingpolygon.points_to_draw[2*i+1].setX(ui->points->item(i,2)->text().toFloat());
@@ -42,7 +40,6 @@ void Polygon::on_pushButton_clicked()
 
     drawingpolygon.setModal(1);
     drawingpolygon.exec();
-    //arco.exec();
 }
 
 void Polygon::on_pushButton_2_clicked()

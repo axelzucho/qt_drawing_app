@@ -14,7 +14,7 @@ class DrawingPolygon : public QDialog
 
 public:
     int points_number;
-    QPointF points_to_draw[20];
+    QPointF points_to_draw[100];
     explicit DrawingPolygon(QWidget *parent = 0);
     ~DrawingPolygon();
     void paintEvent(QPaintEvent *event);
