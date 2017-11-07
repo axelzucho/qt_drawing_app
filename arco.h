@@ -17,6 +17,7 @@ public:
     ~Arco();
     void placePoints(Drawing_Points &dpfile, int radioX, int radioY, int centerX, int centerY);
     void placeDifferent(Drawing_Points &dpfile, int x, int y, int tras_x, int tras_y, int index);
+    void limitAngles(Drawing_Points &dpfile, int radioX, int radioY, int centerX, int centerY);
 private slots:
     void on_pushButton_clicked();
 

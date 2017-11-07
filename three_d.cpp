@@ -3,6 +3,7 @@
 #include "cube.h"
 #include "rectangularprism.h"
 #include "triangular_prism.h"
+#include "cone.h"
 
 Three_D::Three_D(QWidget *parent) :
     QDialog(parent),
@@ -35,4 +36,11 @@ void Three_D::on_pushButton_4_clicked()
     Triangular_Prism triangular_prism;
     triangular_prism.setModal(1);
     triangular_prism.exec();
+}
+
+void Three_D::on_pushButton_5_clicked()
+{
+    Cone cone;
+    cone.setModal(1);
+    cone.exec();
 }

@@ -75,7 +75,9 @@ void Arco::placePoints(Drawing_Points &dpfile, int radioX, int radioY, int cente
         }
 
     dpfile.points_number = index;
+}
 
+void Arco::limitAngles(Drawing_Points &dpfile, int radioX, int radioY, int centerX, int centerY) {
     int start_angle = ui->startAngle->value();
     int end_angle = ui->endAngle->value();
     //int checkX1 = centerX + radioX*cos(startAngle), checkX2 = centerX + radioX*cos(endAngle);
@@ -101,6 +103,7 @@ void Arco::on_pushButton_clicked()
     int centerX = ui->centerX->value();
     int centerY = ui->centerY->value();
     placePoints(drawing_points, radioX, radioY, centerX, centerY);
+    limitAngles(drawing_points, radioX, radioY, centerX, centerY);
     drawing_points.setModal(1);
     drawing_points.exec();
 }

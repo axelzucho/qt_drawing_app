@@ -14,6 +14,9 @@ class Drawing_Points : public QDialog
 public:
     int points_number;
     QPointF points_to_draw[10000];
+    bool line;
+    QPointF line_to_draw[10000];
+    int line_number;
     explicit Drawing_Points(QWidget *parent = 0);
     ~Drawing_Points();
     void paintEvent(QPaintEvent *event);

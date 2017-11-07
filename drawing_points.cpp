@@ -10,6 +10,7 @@ Drawing_Points::Drawing_Points(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Drawing_Points)
 {
+    line = false;
     ui->setupUi(this);
 }
 
@@ -22,4 +23,7 @@ void Drawing_Points::paintEvent(QPaintEvent *event){
     QPainter painter(this);
     painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::RoundCap));
     painter.drawPoints(points_to_draw,points_number);
+    if(line) {
+        painter.drawLines(line_to_draw,line_number);
+    }
 }
