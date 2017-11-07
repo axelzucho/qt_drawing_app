@@ -32,7 +32,9 @@ SOURCES += \
     three_d.cpp \
     cube.cpp \
     rectangularprism.cpp \
-    triangular_prism.cpp
+    triangular_prism.cpp \
+    drawing_points.cpp \
+    cone.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,7 +44,9 @@ HEADERS += \
     three_d.h \
     cube.h \
     rectangularprism.h \
-    triangular_prism.h
+    triangular_prism.h \
+    drawing_points.h \
+    cone.h
 
 FORMS += \
         mainwindow.ui \
@@ -52,4 +56,6 @@ FORMS += \
     three_d.ui \
     cube.ui \
     rectangularprism.ui \
-    triangular_prism.ui
+    triangular_prism.ui \
+    drawing_points.ui \
+    cone.ui

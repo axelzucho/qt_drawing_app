@@ -29,56 +29,56 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>130</x>
      <y>90</y>
-     <width>121</width>
+     <width>71</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Starting point (Y)</string>
+    <string>Radio (Y)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>130</x>
      <y>60</y>
-     <width>121</width>
+     <width>61</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Starting point (X)</string>
+    <string>Radio (X)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>130</x>
      <y>160</y>
-     <width>81</width>
+     <width>71</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Span Angle</string>
+    <string>Center (Y)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>130</x>
      <y>130</y>
-     <width>81</width>
+     <width>71</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Start Angle</string>
+    <string>Center (X)</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="X_StartingPoint">
+  <widget class="QSpinBox" name="radioX">
    <property name="geometry">
     <rect>
      <x>200</x>
@@ -91,7 +91,7 @@
     <number>400</number>
    </property>
   </widget>
-  <widget class="QSpinBox" name="Y_StartingPoint">
+  <widget class="QSpinBox" name="radioY">
    <property name="geometry">
     <rect>
      <x>200</x>
@@ -416,7 +416,7 @@
     <string>Draw Normal</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="StartAngle">
+  <widget class="QSpinBox" name="centerX">
    <property name="geometry">
     <rect>
      <x>200</x>
@@ -429,11 +429,63 @@
     <number>360</number>
    </property>
   </widget>
-  <widget class="QSpinBox" name="SpanAngle">
+  <widget class="QSpinBox" name="centerY">
    <property name="geometry">
     <rect>
      <x>200</x>
      <y>160</y>
+     <width>48</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>360</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>60</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start Angle</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>90</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>End Angle</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="startAngle">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>60</y>
+     <width>48</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>360</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="endAngle">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>90</y>
      <width>48</width>
      <height>26</height>
     </rect>
